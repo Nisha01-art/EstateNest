@@ -1,0 +1,78 @@
+@media(max-width:2560px) {
+  .menutop {
+    background: rgb(180 233 249);
+    height: 80px;
+  }
+
+  .menutop p {
+    margin-top: 25px;
+    font-weight: 600;
+  }
+
+  .fullwidth-carousel {
+    width: 100%;
+    /* full screen width */
+    height: 400px;
+    /* set your desired height here */
+    max-width: 100%;
+  }
+
+  .fullwidth-carousel .carousel-inner,
+  .fullwidth-carousel .carousel-item,
+  .fullwidth-carousel .carousel-item img {
+    height: 100%;
+  }
+
+  .fullwidth-carousel .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .btn-outline-success {
+    color: cadetblue;
+    border-color: cadetblue;
+  }
+
+  .navbar-light .navbar-nav .active>.nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show>.nav-link {
+    color: #007bff;
+    font-size: 20px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #007bff;
+    font-size: 20px;
+}
+
+  .bbody .card {
+    margin-top: 50px;
+    border-radius: 150px;
+  }
+
+  .ffooter {
+    background: rgb(180 233 249);
+  }
+
+  .bbody .card-body p {
+    font-size: 15px;
+    color: rgb(21, 95, 117);
+    font-weight: bold;
+  }
+}
+
+@media(max-width:1920px) {}
+
+@media(max-width:1440px) {}
+
+@media(max-width:1024px) {}
+
+@media(max-width:768px) {}
+
+@media(max-width:576px) {}
+
+@media(max-width:425px) {}
+
+@media(max-width:375px) {}
+
+@media(max-width:325px) {}
