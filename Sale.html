@@ -40,14 +40,14 @@
     </div>
   </section>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="150" height="70"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx">
+    <a class="navbar-brand mb-3" href="index.html"><img src="img/logo.png" width="130" height="60"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse mt-5" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -68,12 +68,81 @@
           <a class="nav-link" href="about.html"> About Us</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <span class="usericon">
+        <a href="#" class="user-icon" data-toggle="modal" data-target="#loginModal">
+          <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </span>
+      <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: cadetblue;">Submit</button>
+      </form> -->
     </div>
   </nav>
+
+  <footer class="ffooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mt-3"><a href="index.html"><img src="img/logo.png" width="130" height="60"></a></div>
+        <div class="col-md-4 mt-3">
+          <h3 style="color: white; font-weight: 500;">Quick Links</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="properties.html">Properties</a></p>
+          <p><a href="about.html">About Us</a>
+          <p></p>
+          <p><a href="#">Contact</a>
+          <p></p>
+        </div>
+        <div class="col-md-4 mt-3"><iframe
+            src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14642.700570519952!2d85.31041523207466!3d23.436099399840938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e6e692a112c3%3A0xbd7dcfd01063392e!2sKanke%2C%20Jharkhand%20834006!5e0!3m2!1sen!2sin!4v1751689338808!5m2!1sen!2sin"
+            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-block btn-secondary">LOGIN</button>
+            <div class="text-center my-3">
+              <hr>
+              <small>or continue with</small>
+              <hr>
+            </div>
+            <button type="button" class="btn btn-primary btn-block"><a href="https://www.facebook.com/"
+                style="color: white; text-decoration: none;">LOGIN WITH FACEBOOK</a></button>
+            <button type="button" class="btn btn-danger btn-block"><a href="https://accounts.google.com/"
+                style="color: white; text-decoration: none;">LOGIN WITH GOOGLE</a></button>
+            <div class="text-right mt-2">
+              <a href="#">Forgot password?</a>
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            Don't have an account? <a href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
